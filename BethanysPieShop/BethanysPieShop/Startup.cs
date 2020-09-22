@@ -27,6 +27,7 @@ namespace BethanysPieShop
             services.AddControllersWithViews();
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
             // services.AddTransient - new instance every time
             // services.AddScoped - singeton per request
             // services.AddSingleton - unique instance
